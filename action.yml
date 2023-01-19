@@ -1,0 +1,22 @@
+name: 'List Branches'
+description: 'List GitHub Branches using API'
+inputs:
+  owner:  # id of input
+    description: 'YOUR_GITHUB_USERNAME'
+    required: true
+  repos:
+    description: 'YOUR_REPOS_NAME'
+    required: true
+  acess-token:
+    description: 'YOUR_ACESS_TOKEN'
+    required: true
+outputs:
+  branches: # id of output
+    description: 'branch names'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.owner }}
+    - ${{ inputs.repo }}
+    - ${{ inputs.acess-token }}
