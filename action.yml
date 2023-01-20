@@ -18,5 +18,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.owner }}
-    - ${{ inputs.repo }}
+    - ${{ inputs.repos }}
     - ${{ inputs.acess-token }}
