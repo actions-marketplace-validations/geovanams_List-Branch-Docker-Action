@@ -8,3 +8,5 @@ jobs:
       - name: List braches
         id: List
         uses: geovanams/List-Branch-Docker-Action@v1.1.4
+        with:
+          repos: 'List-Branch-Docker-Action'
