@@ -7,9 +7,6 @@ inputs:
   owner:
     description: 'YOUR_REPOS_NAME'
     required: true
-outputs:
-  branches: # id of output
-    description: 'branch names'
 runs:
   using: 'docker'
   image: 'Dockerfile'

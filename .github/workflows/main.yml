@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  List-Branches-Job:
+    runs-on: ubuntu-latest
+    name: List Github Branches
+    steps:
+      - name: List braches
+        id: List
+        uses: geovanams/List-Branch-Docker-Action@v1.1.1
+        with:
+          owner: 'geovanams'
+          repos: 'List-Branch-Docker-Action'
+          acess-token: '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'
+      # Use the output from the `hello` step
