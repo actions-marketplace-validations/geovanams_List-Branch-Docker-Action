@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: List braches
         id: List
-        uses: geovanams/List-Branch-Docker-Action@v1.1.2
+        uses: geovanams/List-Branch-Docker-Action@v1.1.3
