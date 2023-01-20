@@ -1,11 +1,11 @@
 name: 'List Branches'
 description: 'List GitHub Branches using API'
 inputs:
-  repos:  # id of input
-    description: 'YOUR_GITHUB_REPOS'
-    required: true
+  myInput:
+    description: "Input to use"
+    default: "world"
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.repos }}
+    - ${{ inputs.myInput }}
