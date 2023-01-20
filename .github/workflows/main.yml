@@ -9,4 +9,5 @@ jobs:
         id: List
         uses: geovanams/List-Branch-Docker-Action@v1.1.5
         with:
-          repos: List-Branch-Docker-Action
+          myInput: world
+
