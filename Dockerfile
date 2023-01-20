@@ -8,4 +8,4 @@ COPY main.py /main.py
 
 RUN chmod +x main.py
 
-CMD ["python", "main.py"]
+CMD ["python", "/main.py"]
